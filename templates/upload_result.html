@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OCR Result</title>
+  <style>
+    .table { border-collapse: collapse; width: 100%; }
+    .table, .table td, .table th { border: 1px solid black; padding: 6px; }
+  </style>
+</head>
+<body>
+  <h2>Parsed Table: {{ filename }}</h2>
+  <div>
+    {{ table_html|safe }}
+  </div>
+  <a href="/">Back</a>
+</body>
+</html>
